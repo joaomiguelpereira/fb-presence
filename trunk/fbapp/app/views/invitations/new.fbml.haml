@@ -1,0 +1,6 @@
+%fb:fbml
+  %fb:add-section-button{:section=>"profile"}
+  -fb_multi_friend_request(t(:invitation_type), t(:invitation_message), invitations_path) do
+    #{t(:invitation_content)} #{fb_req_choice(t(:invitation_action_message), new_invitation_url(:from=>@from_user_id, :canvas=>true))}
+     
+  

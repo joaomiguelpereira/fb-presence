@@ -1,0 +1,18 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xmlns:fb" => "http://www.facebook.com/2008/fbml"}
+  %head
+    %meta{'name' => 'keywords', :content => "somekeywords"}/
+    %title== the page title
+    = stylesheet_link_tag "default", :cache=>true
+    = yield :javascripts
+  %body
+    #main
+      #head
+        #top-menu
+          option 1 option 2 option3
+        #head-logo
+          =image_tag("logo_header.png");
+        
+        #main-menu
+          main menu goes here
+      = yield :layout
