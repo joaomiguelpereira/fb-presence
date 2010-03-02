@@ -1,0 +1,13 @@
+%fb:fbml
+  = stylesheet_link_tag 'default'
+  %style
+  #main
+    #head{:style=>"background: transparent url(#{image_path('header_bg.jpg')}) repeat-x;"}
+      #top-menu
+        option 1 option 2 option3
+      #head-logo
+        =image_tag("logo_header.png");
+      #main-menu
+        main menu goes here
+    = yield :layout
+    
