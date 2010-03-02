@@ -1,0 +1,25 @@
+#main {
+	
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+
+#head-logo {
+	height:89px;
+	
+}
+#head {
+	background: transparent url(/images/header_bg.jpg) repeat-x;
+	width:100%;
+	height:144px;
+	
+}
+#top-menu {
+	text-align:right;
+	width:100%;
+}
+#main-menu {
+	text-align:right;
+	width:100%;
+}
