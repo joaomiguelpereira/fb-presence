@@ -1,0 +1,10 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xmlns:fb" => "http://www.facebook.com/2008/fbml"}
+  %head
+    %title Administration
+    = stylesheet_link_tag "default", :cache=>true
+    = yield :javascripts
+  %body
+    #main
+      = yield :layout
+   
