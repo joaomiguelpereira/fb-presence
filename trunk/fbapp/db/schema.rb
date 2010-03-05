@@ -12,7 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100302160003) do
 
   create_table "users", :force => true do |t|
-    t.integer  "facebook_id", :null => false
+    t.integer  "facebook_id", :limit => 8
     t.string   "session_key"
     t.datetime "created_at"
     t.datetime "updated_at"
