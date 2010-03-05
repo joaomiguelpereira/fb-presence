@@ -1,0 +1,20 @@
+#This file holds the base configuration for the Web App
+defaults: &defaults
+  #Add here configuration for all environments    
+  webapp_name: Koala
+
+development:
+  <<: *defaults
+  webapp_site: http://jpereira.no-ip.org
+  webapp_domain: http://jpereira.no-ip.org
+
+test:
+  <<: *defaults
+  webapp_site: http://jpereira.no-ip.org
+  webapp_domain: http://jpereira.no-ip.org
+  
+  
+production:
+  <<: *defaults
+  webapp_site: http://jpereira.no-ip.org
+  webapp_domain: http://jpereira.no-ip.org
