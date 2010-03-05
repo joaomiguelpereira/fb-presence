@@ -9,15 +9,17 @@
     #main
       #head
         #top-menu
-           =render_partial("menus/top_menu")
+          = render :partial => 'menus/top_menu'
         #head-logo
           =link_to image_tag("logo_header.png",{:border=>"0"}), root_path;
         #main-menu
-          =render_partial("menus/main_menu")
-        #left-column
-        left
-      #right-column
-        right      
-      = yield :layout
-      #footer
-        =render_partial("menus/footer_menu")
+          = render :partial => 'menus/main_menu'
+      #featured-box
+        = render :partial=> 'shared/feature_content'
+      #content-container
+        #content
+          = yield :layout
+        #side-bar
+          = yield :sidebar_content
+        #footer
+          = render :partial=> 'menus/footer_menu'
