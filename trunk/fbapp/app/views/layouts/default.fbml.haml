@@ -4,25 +4,15 @@
   #main
     #head{:style=>"background: transparent url(#{image_path('header_bg.jpg')}) repeat-x;"}
       #top-menu
-        %ul
-          %li= link_to "option 1", root_path
-          %li= link_to "option 1", root_path
-          %li= link_to "option 1", root_path
-          %li= link_to "option 1", root_path
-          
+        =render_partial("menus/top_menu")
       #head-logo
         =link_to image_tag("logo_header.png",{:border=>"0"}), root_path;
       #main-menu
-        %ul
-          %li= link_to "menu 1", root_path
-          %li= link_to "menu 1", root_path
-          %li= link_to "menu 1", root_path
-          %li= link_to "menu 1", root_path
-          %li= link_to "menu 1", root_path
-          %li= link_to "menu 1", root_path
+        =render_partial("menus/main_menu")
       #left-column
         left
       #right-column
         right    
     = yield :layout
     #footer
+      =render_partial("menus/footer_menu")
