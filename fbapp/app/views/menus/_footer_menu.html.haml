@@ -1,5 +1,1 @@
-%ul
-  %li= link_to "option 1", root_path
-  %li= link_to "option 1", root_path
-  %li= link_to "option 1", root_path
-  %li= link_to "option 1", root_path
+= render :partial => 'menus/dynamic_menu', :locals => { :menu => Menu.find_by_name("footer") }
