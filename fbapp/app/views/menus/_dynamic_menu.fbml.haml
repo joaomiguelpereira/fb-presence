@@ -1,0 +1,5 @@
+%ul
+  -if menu
+    -for page_menu_option in menu.page_menu_options.find(:all,:order=>:show_order) do
+      %li= link_to page_menu_option.page.breadcrumb, page_url(page_menu_option.page)
+ 
